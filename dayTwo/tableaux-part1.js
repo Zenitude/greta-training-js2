@@ -86,15 +86,15 @@ console.log(itCompanies.reverse());
 
 // 17. Découpez les 3 premières entreprises du tableau
 
-console.log(itCompanies.slice(3));
+console.log(itCompanies.splice(3));
 
 // 18. Découpez les 3 dernières entreprises du tableau
 
-console.log(itCompanies.slice(-3));
+console.log(itCompanies.splice(-3));
 
 // 19. Séparez (the middle) entreprise d'IT ou des entreprises à partir du tableau.
 
-
+console.log(itCompanies.slice(Math.floor(itCompanies.length/2)));
 
 // 20. Supprimez la première entreprise d'IT à partir du tableau.
 
@@ -104,6 +104,8 @@ itCompanies.unshift('Oracle');
 
 // 21. Supprimez (the middle) entreprise d'IT ou des entreprises à partir du tableau.
 
+itCompanies.splice(Math.floor(itCompanies.length/2), 1);
+console.log(itCompanies);
 
 // 22. Supprimez la dernière entreprise d'IT à partir du tableau.
 
